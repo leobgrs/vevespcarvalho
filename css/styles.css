@@ -590,7 +590,7 @@ body.menu-open {
 .hero-card img {
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 5;
+  /*aspect-ratio: 4 / 5;*/
   object-fit: cover;
   object-position: center center; /* Garante que a imagem fique centralizada */
 }
