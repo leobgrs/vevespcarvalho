@@ -588,11 +588,11 @@ body.menu-open {
 }
 
 .hero-card img {
-  width: auto;
-  height: auto;
-  aspect-ratio: 3 / 4; /* Deixa o card mais "alto" para caber o topo do rosto */
-  object-fit: cover;
-  object-position: 50% 50%;
+     width: auto;
+    height: auto;
+    aspect-ratio: 4 / 4;
+    object-fit: cover;
+    object-position: 65% 50%;
 }
 
 .float-card {
