@@ -592,7 +592,7 @@ body.menu-open {
   height: auto;
   aspect-ratio: 3 / 4; /* Deixa o card mais "alto" para caber o topo do rosto */
   object-fit: cover;
-  object-position: 60% 50%;
+  object-position: 50% 50%;
 }
 
 .float-card {
