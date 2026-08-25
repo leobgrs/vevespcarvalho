@@ -588,7 +588,7 @@ body.menu-open {
 }
 
 .hero-card img {
-  width: 100%;
+  width: auto;
   height: auto;
   aspect-ratio: 3 / 4; /* Deixa o card mais "alto" para caber o topo do rosto */
   object-fit: cover;
