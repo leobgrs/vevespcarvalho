@@ -34,21 +34,67 @@
 
   <link rel="stylesheet" href="./css/styles.css">
 
-  <!-- BLOCO DE ESTILO ADICIONADO PARA CORRIGIR O BOTÃO DO CABEÇALHO E RODAPÉ -->
+  <!-- BLOCO DE ESTILO ADICIONADO PARA CORRIGIR O BOTÃO E O BANNER DA SEMANA DO CLIENTE -->
   <style>
     .site-header .btn-primary,
     .main-nav .btn-primary,
     .mobile-menu .btn-primary {
-      background-color: #16382F !important; /* Mantém a cor de fundo padrão (verde escuro) */
-      color: #FFFFFF !important; /* Força o texto a ficar branco, ignorando regras do menu */
+      background-color: #16382F !important;
+      color: #FFFFFF !important;
       border: none !important;
     }
     
     .site-header .btn-primary:hover,
     .main-nav .btn-primary:hover,
     .mobile-menu .btn-primary:hover {
-      background-color: #0f2721 !important; /* Cor ligeiramente mais escura ao passar o mouse */
+      background-color: #0f2721 !important;
       color: #FFFFFF !important;
+    }
+
+    /* Estilo do Banner da Semana do Cliente */
+    .client-week-banner {
+      background: linear-gradient(135deg, #16382F 0%, #1e4d41 100%);
+      color: #ffffff;
+      padding: 14px 20px;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      position: relative;
+      z-index: 99;
+      border-bottom: 2px solid #C9A76A;
+    }
+    .client-week-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .client-week-banner span.badge {
+      background-color: #C9A76A;
+      color: #16382F;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .client-week-banner p {
+      margin: 0;
+      font-size: 0.95rem;
+      font-weight: 400;
+    }
+    .client-week-banner a {
+      color: #f3e5ab;
+      text-decoration: underline;
+      font-weight: 600;
+      transition: color 0.2s;
+    }
+    .client-week-banner a:hover {
+      color: #ffffff;
     }
   </style>
 
@@ -127,7 +173,7 @@
         "name": "Qual a diferença entre faceta em resina e lente de porcelana?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "As facetas em resina são confeccionadas diretamente sobre o dente com material resinoso, enquanto as lentes de porcelana são confeccionadas em laboratório e cimentadas sobre o dente. Cada técnica possui indicações próprias."
+          "text": "As facetas em resina são confeccionadas diretamente sobre o dente com material resinoso, enquanto as lentes de porcelana são confeccionadas em laboratório e cimentadas sobre o dente. Cada técnica possui indicações propias."
         }
       },
       {
@@ -153,6 +199,14 @@
 <body>
 
   <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+  <!-- BANNER DA SEMANA DO CLIENTE -->
+  <div class="client-week-banner">
+    <div class="client-week-content">
+      <span class="badge">Semana do Cliente</span>
+      <p>Condições e planejamento especial de atendimento para você renovar o seu sorriso. <a data-whatsapp href="https://wa.me/5579999410388?text=Ol%C3%A1%2C%20Dra.%20Ver%C3%B4nica!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20condições%20da%20Semana%20do%20Cliente." target="_blank" rel="noopener">Garanta sua avaliação</a></p>
+    </div>
+  </div>
 
   <header class="site-header">
     <div class="container header-inner">
@@ -237,8 +291,7 @@
 
         <div class="hero-visual reveal">
           <div class="hero-card">
-            <!-- AJUSTADO PARA object-position: left center PARA TRAZER O SORRISO PARA A ESQUERDA -->
-            <img src="images/negra.jpg" alt="Ilustração de um sorriso harmônico e natural" >
+            <img src="images/negra.jpg" alt="Ilustração de um sorriso harmônico e natural" width="720" height="880" fetchpriority="high" style="object-fit: cover; object-position: center center;">
             <div class="float-card">
               <span class="float-icon" aria-hidden="true">
                 <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
@@ -783,7 +836,7 @@
         <h3>Navegação</h3>
         <ul>
           <li><a href="#beneficios">Benefícios</a></li>
-          <li><a href="#profissional">A Dra. Verônica</a></li>
+          <li><x href="#profissional">A Dra. Verônica</a></li>
           <li><a href="#como-funciona">Como funciona</a></li>
           <li><a href="#resultados">Resultados</a></li>
           <li><a href="#faq">Dúvidas frequentes</a></li>
