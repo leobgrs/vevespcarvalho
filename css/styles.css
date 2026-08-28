@@ -377,6 +377,16 @@ h1, h2, h3 {
   color: var(--green-700);
 }
 
+/* --- AJUSTE DE VISIBILIDADE E HARMONIA DO BOTÃO NO MENU --- */
+.main-nav a.btn {
+  color: #ffffff;
+}
+
+.main-nav a.btn:hover {
+  color: var(--gold-2);
+}
+/* --------------------------------------------------------- */
+
 .nav-toggle {
   display: grid;
   place-items: center;
