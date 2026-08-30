@@ -1,6 +1,6 @@
 window.SITE_CONFIG = {
   dentista: {
-    nome: "Dra. Verônica Sampaio",
+    nome: "Dra. Verônica Sampaio", 
     especialidade: "Odontologia Estética",
     cro: "CRO SE-001134",
     formacao: "Formação acadêmica — informação a incluir",
