@@ -8,7 +8,7 @@ window.SITE_CONFIG = {
     instagramUrl: "https://instagram.com/draveronicasampaio"
   },
   contato: {
-    whatsappNumber: "5579999999999",
+    whatsappNumber: "5553999427999",
     whatsappMessage: "Olá, Dra. Verônica! Gostaria de saber mais sobre facetas em resina e agendar uma avaliação."
   },
   local: {
